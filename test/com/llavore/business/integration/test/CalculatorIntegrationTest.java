@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.llavore.Bussines.Calculator;
+import com.llavore.Bussines.Calculator.Calculator;
 
 public class CalculatorIntegrationTest {
 

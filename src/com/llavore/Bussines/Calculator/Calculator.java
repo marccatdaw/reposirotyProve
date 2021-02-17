@@ -1,4 +1,4 @@
-package com.llavore.Bussines;
+package com.llavore.Bussines.Calculator;
 
 public class Calculator implements ICalculator {
 	public int add(int num1, int num2){

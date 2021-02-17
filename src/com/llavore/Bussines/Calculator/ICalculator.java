@@ -1,4 +1,4 @@
-package com.llavore.Bussines;
+package com.llavore.Bussines.Calculator;
 
 public interface ICalculator {
 	
