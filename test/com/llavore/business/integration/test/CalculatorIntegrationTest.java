@@ -10,24 +10,27 @@ public class CalculatorIntegrationTest {
 
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");	
+		Calculator calculator = new Calculator();
+		assertEquals(calculator.add(6, 2),8);
 	}
 
 	
 	@Test
 	public void testSubstract() {
-		Calculator calc = new Calculator();
-		assertEquals(calc.substract(6, 2),4);
+		Calculator calculator = new Calculator();
+		assertEquals(calculator.substract(6, 2),4);
 	}
 	
 	@Test
 	public void testmultiply() {
-		fail("Not yet implemented");	
+		Calculator calculator = new Calculator();
+		assertEquals(calculator.multiply(6, 2),12);
 	}
 	
 	@Test
 	public void testDivide() {
-		fail("Not yet implemented");	
+		Calculator calculator = new Calculator();
+		assertEquals(calculator.divide(6, 2),3);
 	}
 }
 
