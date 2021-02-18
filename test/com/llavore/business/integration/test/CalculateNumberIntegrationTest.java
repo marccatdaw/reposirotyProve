@@ -24,5 +24,16 @@ public class CalculateNumberIntegrationTest {
 		OperationsArray calculate = new OperationsArray();
 		assertEquals(calculate.operationParNumberArray(array),8);
 	}
+	
+	@Test
+	public void testOperateNumberArray() {
+		int[] array = new int[10];
+		array[0]=2;
+		array[3]=2;
+		array[6]=2;
+		array[9]=2;
+		OperationsArray calculate = new OperationsArray();
+		assertEquals(calculate.operationNumberArray(array,3),8);
+	}
 
 }

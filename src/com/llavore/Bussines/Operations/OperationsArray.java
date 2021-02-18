@@ -27,5 +27,14 @@ public class OperationsArray implements IOperations {
 		}
 		return totalResult;
 	}
+	
+	@Override
+	public int operationNumberArray(int[] array, int number) {
+		int totalResult = 0;
+		for(int i = 0; i<array.length; i=i+number) {
+			totalResult+=array[i];
+		}
+		return totalResult;
+	}
 
 }
