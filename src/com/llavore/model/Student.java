@@ -1,22 +1,16 @@
-package com.llavore.models.business;
+package com.llavore.model;
 
 import java.sql.Date;
 import java.util.UUID;
 
-public class Student extends ModelStructure {
+public class Student  {
 
+	private Integer IdStudent;
 	private String name;
 	private String surname;
-	private	int age;
+	private	Integer age;
 	private Date dateOfBirth;
 	
-	public Student() {
-		super();
-		
-	}
-
-	public String getIdStudent() {
-		return idModel.toString();
-	}
+	
 	
 }
