@@ -1,6 +1,6 @@
 package com.llavore.model;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Student {
 
@@ -8,10 +8,10 @@ public class Student {
 	private String name;
 	private String surname;
 	private Integer age;
-	private Date dateOfBirth;
+	private LocalDate dateOfBirth;
 
 	public Student(Integer idStudent, String name, String surname, Integer age,
-			Date dateOfBirth) {
+			LocalDate dateOfBirth) {
 		super();
 		IdStudent = idStudent;
 		this.name = name;
@@ -56,11 +56,11 @@ public class Student {
 		this.age = age;
 	}
 
-	public Date getDateOfBirth() {
+	public LocalDate getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date date) {
+	public void setDateOfBirth(LocalDate date) {
 		this.dateOfBirth = date;
 	}
 
