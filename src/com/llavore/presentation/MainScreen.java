@@ -7,8 +7,10 @@ public class MainScreen implements IScreen {
 
 	@Override
 	public void show() {
-		System.out.println("this is a screen1.");
-		change(new Screen2());
+		System.out.println("Welcom to Student System");
+		System.out.println("You can add diferents Students.");
+		System.out.println();
+		change(new MenuScreen());
 	}
 
 	@Override
