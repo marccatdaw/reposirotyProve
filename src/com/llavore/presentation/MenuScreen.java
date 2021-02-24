@@ -3,6 +3,7 @@ package com.llavore.presentation;
 import java.time.LocalDate;
 
 import com.llavore.Bussines.StudentBl;
+import com.llavore.model.MainMenu;
 import com.llavore.model.Student;
 import com.llavore.presentation.utils.Keyboard;
 
@@ -12,24 +13,27 @@ public class MenuScreen implements IScreen {
 	public void show() {
 		// TODO Auto-generated method stub
 		System.out.println("Menu:");
-		System.out.println("    1. Add new Student");
-		System.out.println("    2. Calculate the students who most old.");
 		System.out.println(
-				"    3. Calculate mitjana d'edat de tots els estudiants");
-		System.out.println("    0. Exit");
+				"    " + MainMenu.ADD_STUDENT.ordinal() + ". Add new Student");
+		System.out.println("    " + MainMenu.OLDEST_AGE_STUDENT.ordinal()
+				+ ". Calculate the students who most old.");
+		System.out.println("    " + MainMenu.MEAN_AGE_STUDENT.ordinal()
+				+ " Calculate mitjana d'edat de tots els estudiants");
+		System.out.println("    " + MainMenu.EXIT.ordinal() + " Exit");
+		int option = Keyboard.demanar_Integer("What would you do?", false);
+		MainMenu optionMenu = MainMenu.values()[option];
+		switch (optionMenu) {
 
-		switch (Keyboard.demanar_Integer("What would you do?", false)) {
-
-		case 1:
+		case ADD_STUDENT:
 			option1();
 			break;
-		case 2:
+		case OLDEST_AGE_STUDENT:
 			option2();
 			break;
-		case 3:
+		case MEAN_AGE_STUDENT:
 			option3();
 			break;
-		case 0:
+		case EXIT:
 			close();
 			break;
 		default:
