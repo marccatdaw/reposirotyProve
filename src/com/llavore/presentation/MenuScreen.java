@@ -18,12 +18,11 @@ public class MenuScreen implements IScreen {
 		System.out.println("    " + MainMenu.OLDEST_AGE_STUDENT.ordinal()
 				+ ". Calculate the students who most old.");
 		System.out.println("    " + MainMenu.MEAN_AGE_STUDENT.ordinal()
-				+ " Calculate mitjana d'edat de tots els estudiants");
-		System.out.println("    " + MainMenu.EXIT.ordinal() + " Exit");
+				+ ". Calculate mitjana d'edat de tots els estudiants");
+		System.out.println("    " + MainMenu.EXIT.ordinal() + ". Exit");
 		int option = Keyboard.demanar_Integer("What would you do?", false);
 		MainMenu optionMenu = MainMenu.values()[option];
 		switch (optionMenu) {
-
 		case ADD_STUDENT:
 			option1();
 			break;

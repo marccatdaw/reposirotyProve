@@ -3,6 +3,7 @@ package com.llavore.presentation;
 public class MainScreen implements IScreen {
 
 	public MainScreen() {
+
 	}
 
 	@Override
