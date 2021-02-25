@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Student {
 
-	private Integer IdStudent;
+	private Integer idStudent;
 	private String name;
 	private String surname;
 	private Integer age;
@@ -13,7 +13,7 @@ public class Student {
 	public Student(Integer idStudent, String name, String surname, Integer age,
 			LocalDate dateOfBirth) {
 		super();
-		IdStudent = idStudent;
+		this.idStudent = idStudent;
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
@@ -21,15 +21,15 @@ public class Student {
 	}
 
 	public Student() {
-
+		super();
 	}
 
 	public Integer getIdStudent() {
-		return IdStudent;
+		return idStudent;
 	}
 
 	public void setIdStudent(Integer idStudent) {
-		IdStudent = idStudent;
+		idStudent = idStudent;
 	}
 
 	public String getName() {
@@ -68,7 +68,7 @@ public class Student {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("Student [IdStudent=");
-		builder.append(IdStudent);
+		builder.append(idStudent);
 		builder.append(", name=");
 		builder.append(name);
 		builder.append(", surname=");
